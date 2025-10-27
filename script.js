@@ -15,5 +15,5 @@
         const sortedBands = bands.sort((a, b) => strip(a).localeCompare(strip(b)));
 
         // Insert into the UL
-        document.getElementById('band').innerHTML =
+        document.getElementById('bands').innerHTML =
             sortedBands.map(band => `<li>${band}</li>`).join('');
